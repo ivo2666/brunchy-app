@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import "../fonts/Poppins/Poppins-Bold.ttf";
 import "../index.css";
-import shoppingBasket from "../images/shopping-basket.png";
+import shoppingBasket from "../assets/shopping-basket.png";
 import { Button } from "../components/button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
