@@ -1,0 +1,41 @@
+@use "colors";
+@import "mixins";
+
+.button {
+  display: flex;
+  background-color: colors.$base;
+  border-radius: 7px;
+  color: colors.$base-content;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  &:hover {
+    background-color: colors.$base-100;
+  }
+}
+
+.primary {
+  background-color: colors.$primary;
+  border-radius: 7px;
+  color: colors.$primary-content;
+  min-width: 154px;
+  height: 54px;
+  font-size: 20px;
+  font-weight: bold;
+  &:hover {
+    background-color: colors.$primary-hover;
+  }
+  
+}
+
+@include mobile {
+  .primary {
+    min-width: 148.7px;
+  }
+  .smallOnMobile.primary {
+    min-width: 94px;
+    height: 35px;
+  }
+}
