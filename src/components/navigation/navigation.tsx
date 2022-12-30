@@ -1,7 +1,5 @@
 import classes from "../../styles/navigation.module.scss";
 import { FC, memo } from "react";
-import { FreeDelivery } from "../free-delivery";
-import { NavList } from "../nav-list";
 
 /**
  * UI component for application navigation
@@ -9,8 +7,10 @@ import { NavList } from "../nav-list";
 export const Navigation: FC = ({ ...props }) => {
   return (
     <nav className={classes.nav}>
-      <NavList />
-      <FreeDelivery />
+      <ul className={classes["nav-list"]} {...props}>
+        <li className={classes["nav-item"]}>About</li>
+        <li className={classes["nav-item"]}>Call Us</li>
+    </ul>
     </nav>
   );
 };

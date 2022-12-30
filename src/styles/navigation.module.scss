@@ -1,18 +1,15 @@
-@import "mixins";
+@use "colors";
 
-.nav {
-  max-width: 100%;
-  width: 341px;
-  min-height: 55px;
+.nav-list {
+  width: 140px;
   display: flex;
-  align-items: center;
-  gap: 17px;
+  justify-content: space-between;
 }
 
-@include mobile {
-    .nav {
-        gap: 27px; 
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+.nav-item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: colors.$text-secondary;
 }
