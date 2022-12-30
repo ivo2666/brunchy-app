@@ -1,4 +1,15 @@
 .header {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo-nav-wrapper {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-grow: 2;
+    margin-right: 17px;
 }
