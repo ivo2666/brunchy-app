@@ -1,7 +1,7 @@
 import classes from "../../styles/button.module.scss";
 import { FC, memo } from "react";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * If the button should apply primary class styles
    */
@@ -28,11 +28,12 @@ export const Button: FC<ButtonProps> = ({
   smallOnMobile = false,
   children,
   primary,
+  className,
   ...props
 }) => {
   return (
     <button
-      className={`${smallOnMobile ? classes.smallOnMobile : ""} ${
+      className={`${className} ${smallOnMobile ? classes.smallOnMobile : ""} ${
         primary ? classes.primary : ""
       } ${classes.button}`}
       {...props}

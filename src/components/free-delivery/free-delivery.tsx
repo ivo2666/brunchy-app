@@ -4,13 +4,14 @@ import { Ellipse1Icon } from "./ellips-icon";
 import motorcyclist from '../../assets/asset8.png';
 
 /**
- * UI component to notify that delivery is free
+ * UI component to notify that delivery is free.
  */
-export const FreeDelivery: FC = ({
+export const FreeDelivery: FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
   ...props
 }) => {
   return (
-    <div className={classes.wrapper}>
+    <div className={`${className} ${classes.wrapper}`} {...props}>
         <div className={classes["pink-rectangle"]}>
         <div className={classes["free-delivery"]}>Free Delivery</div>
         </div>

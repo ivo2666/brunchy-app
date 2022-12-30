@@ -5,16 +5,14 @@ import { Navigation } from "../navigation";
 import FreeDelivery from "../free-delivery/free-delivery";
 
 /**
- * UI component for application header
+ * UI component for application header.
  */
-export const Header: FC = ({
-  ...props
-}) => {
+export const Header: FC<React.HTMLAttributes<HTMLElement>> = ({className, ...props }) => {
   return (
-    <header className={classes.header}>
+    <header className={`${className} ${classes.header}`} {...props}>
       <div className={classes["logo-nav-wrapper"]}>
-      <Logo />
-      <Navigation />
+        <Logo />
+        <Navigation />
       </div>
       <FreeDelivery />
     </header>
