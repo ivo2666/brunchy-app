@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import "../fonts/Poppins/Poppins-Bold.ttf";
 import "../index.css";
 import { Logo } from "../components/logo";
 

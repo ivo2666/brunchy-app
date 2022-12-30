@@ -1,5 +1,4 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import "../fonts/Poppins/Poppins-SemiBold.ttf";
 import "../index.css";
 import { Navigation } from "../components/navigation";
 
