@@ -35,10 +35,7 @@ code {
     monospace;
 }
 
-button,
-a {
+button, h1, a {
   all: unset;
   box-sizing: border-box;
 }
-
-

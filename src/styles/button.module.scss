@@ -5,11 +5,12 @@
   display: flex;
   background-color: colors.$base;
   border-radius: 7px;
-  color: colors.$base-content;
+  color: colors.$text-primary;
   padding: 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: "Poppins";
   cursor: pointer;
   &:hover {
     background-color: colors.$base-100;
