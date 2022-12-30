@@ -1,0 +1,18 @@
+@import "mixins";
+
+.nav {
+  max-width: 100%;
+  width: 341px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+@include mobile {
+    .nav {
+        gap: 27px; 
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

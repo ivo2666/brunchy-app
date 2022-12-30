@@ -2,7 +2,7 @@ import classes from "../../styles/nav-list.module.scss";
 import { FC, memo } from "react";
 
 /**
- * UI component for application nav
+ * UI component for application nav list
  */
 export const NavList: FC = ({
   ...props
