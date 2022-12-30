@@ -1,0 +1,49 @@
+@use "colors";
+
+.wrapper {
+  position: relative;
+  width: 184px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper {
+  position: absolute;
+  right: 0;
+  width: 55px;
+  height: 55px;
+}
+
+.pink-rectangle {
+  width: 184px;
+  height: 37px;
+  background: #ffe5cd;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.free-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 123px;
+  height: 37px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: colors.$primary;
+}
+
+.ellips-icon {
+  position: absolute;
+  top: 0;
+}
+
+.motorcyclist {
+  position: absolute;
+  width: 40px;
+  top: 11px;
+  right: 8px;
+}
