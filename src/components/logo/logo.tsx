@@ -9,12 +9,12 @@ export const Logo: FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   ...props
 }) => {
   return (
-    <h1
+    <h2
       className={`${className} ${classes.logo}`}
       {...props}
     >
         BRUNCHY
-    </h1>
+    </h2>
   );
 };
 

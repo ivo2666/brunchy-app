@@ -1,0 +1,63 @@
+@use "colors";
+@import "mixins";
+
+.hero {
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+  width: 535.31px;
+  padding: 0;
+}
+
+.title {
+  color: colors.$text-primary;
+  margin-top: 45px;
+  margin-bottom: 37px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 65px;
+}
+
+.paragraph {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 571px;
+}
+
+.title-span {
+  color: colors.$primary;
+}
+
+@include mobile {
+  .hero {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    margin-top: 19px;
+    margin-bottom: 18px;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+}
+
+@include large {
+  .hero {
+    width: 100%;
+    text-align: left;
+  }
+  .title {
+    width: 480px;
+    margin-top: 45px;
+    margin-bottom: 37px;
+  }
+
+  .paragraph {
+    width: 512px;
+  }
+}
