@@ -11,5 +11,9 @@
     align-items: center;
     justify-content: space-between;
     flex-grow: 2;
-    margin-right: 17px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    margin: 0 17px;
 }

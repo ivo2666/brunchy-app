@@ -12,7 +12,7 @@ export const Header: FC<React.HTMLAttributes<HTMLElement>> = ({className, ...pro
     <header className={`${className} ${classes.header}`} {...props}>
       <div className={classes["logo-nav-wrapper"]}>
         <Logo />
-        <Navigation />
+        <Navigation className={classes.nav} />
       </div>
       <FreeDelivery />
     </header>
