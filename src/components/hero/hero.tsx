@@ -4,7 +4,7 @@ import { FC, memo } from "react";
 /**
  * UI component for displaying a large box with a title and description.
  */
-export const Hero: FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
+export const Hero: FC<React.HTMLAttributes<HTMLElement>> = ({
   className,
   ...props
 }) => {

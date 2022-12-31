@@ -1,0 +1,85 @@
+@use "colors";
+
+.card {
+  width: 243.48px;
+  height: 303px;
+  position: relative;
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // width: 192.48px;
+    height: 120px;
+  }
+
+  .body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 229px;
+    height: 270px;
+    background-color: colors.$base-200;
+    border-radius: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+
+    .name {
+      position: absolute;
+      top: 111px;
+      margin: 0;
+      width: 100%;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: colors.$text-primary;
+    }
+
+    .caption {
+      position: absolute;
+      top: 145px;
+      margin: 0;
+      width: 100%;
+      line-height: 43px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: colors.$text-secondary;
+    }
+
+    .price {
+      position: absolute;
+      top: 181px;
+      margin: 0;
+      width: 100%;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: colors.$text-primary;
+
+      .currency {
+        color: colors.$primary;
+      }
+    }
+
+    .basket {
+      position: absolute;
+      bottom: 19px;
+      right: 18px;
+    }
+
+    .basket-image {
+      width: 20px;
+    }
+  }
+}
