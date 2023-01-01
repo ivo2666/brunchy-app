@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import "../index.css";
-import {data} from "../data/data";
+import data from "../data/data.json";
 import { Basket } from "../components/basket";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
