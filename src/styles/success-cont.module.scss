@@ -1,0 +1,58 @@
+@use "colors";
+@import "mixins";
+
+.success-cont {
+  width: 615px;
+  height: 370px;
+  padding: 86px 130px 85px;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 52px;
+  background-color: colors.$base-200;
+  border-radius: 15px;
+
+  .content {
+    display: flex;
+    height: 199px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-weight: 700;
+      font-size: 40px;
+      color: colors.$primary;
+      margin: 0;
+    }
+
+    .info {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 65px;
+      color: colors.$text-secondary;
+      margin: 0;
+    }
+  }
+}
+
+@include mobile {
+  .success-cont {
+    width: 378px;
+    max-width: 100%;
+    height: 242px;
+    padding: 56px 21.13px 56.17px 21px;
+
+    .content {
+      height: 129.83px;
+      line-height: 30px;
+      .title {
+        font-size: 32px;
+      }
+      .info {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+  }
+}

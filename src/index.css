@@ -41,5 +41,8 @@ a,
 ul,
 li {
   all: unset;
+}
+
+* {
   box-sizing: border-box;
 }
