@@ -1,0 +1,74 @@
+@use "colors";
+@import "mixins";
+
+.basket {
+  width: 479.58px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: colors.$base-200;
+  border-radius: 15px;
+  padding: 42px 49.88px 48px 46.48px;
+  .items {
+    width: 383.21;
+    max-width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    color: colors.$text-primary;
+    .item-price {
+      font-size: 13px;
+      line-height: 20px;
+    }
+    .item-name {
+      font-size: 20px;
+      line-height: 52px;
+      display: flex;
+      align-items: center;
+    }
+
+    .currency {
+      color: colors.$primary;
+    }
+  }
+
+  .divider {
+    width: 383.21;
+    max-width: 100%;
+    margin-top: 19.49px;
+    margin-bottom: 22.59px;
+    height: 1px;
+    background-color: colors.$text-secondary;
+    opacity: 0.4;
+    box-sizing: border-box;
+  }
+
+  .total {
+    max-width: 100%;
+    width: 383.21px;
+  }
+}
+
+@include mobile {
+  .basket {
+    width: 352.95px;
+    padding: 42px 36.71px 48px 34.21px;
+
+    .total {
+      width: 282.03px;
+    }
+    .divider {
+      width: 282.03px;
+    }
+
+    .items {
+      width: 282.03px;
+    }
+  }
+}
