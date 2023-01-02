@@ -9,6 +9,10 @@ interface ProductListProps extends React.HTMLAttributes<HTMLDivElement> {
    */
   items: Item[];
   /**
+   * On select product handler.
+   */
+  onProductSelect?: (Item: Item) => void;
+  /**
    * Optional. HTML Class.
    */
   className?: string;
@@ -20,13 +24,14 @@ interface ProductListProps extends React.HTMLAttributes<HTMLDivElement> {
 export const ProductList: FC<ProductListProps> = ({
   className,
   items,
+  onProductSelect,
   ...props
 }) => {
   return (
     <div className={classes.wrapper}>
       <div className={`${className} ${classes["product-list"]}`} {...props}>
         {items.map((item) => (
-          <Card {...item} />
+          <Card item={item} onBasketClick={onProductSelect} />
         ))}
       </div>
     </div>
