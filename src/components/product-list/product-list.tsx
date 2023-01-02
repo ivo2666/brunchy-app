@@ -31,7 +31,7 @@ export const ProductList: FC<ProductListProps> = ({
     <div className={classes.wrapper}>
       <div className={`${className} ${classes["product-list"]}`} {...props}>
         {items.map((item) => (
-          <Card item={item} onBasketClick={onProductSelect} />
+          <Card item={item} key={item.name} onBasketClick={onProductSelect} />
         ))}
       </div>
     </div>

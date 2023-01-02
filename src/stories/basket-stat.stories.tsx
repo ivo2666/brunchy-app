@@ -26,7 +26,7 @@ const Template: ComponentStory<typeof BasketStat> = (args) => (
 export const Example = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example.args = {
-  totalPrice: 4.5,
+  totalPrice: "4.50",
 };
 Example.parameters = {
   viewport: {
@@ -38,7 +38,7 @@ Example.parameters = {
 export const Example1 = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example1.args = {
-  totalPrice: 3,
+  totalPrice: "3.00",
 };
 Example1.parameters = {
   viewport: {

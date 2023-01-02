@@ -3,6 +3,10 @@ import { FC, memo } from "react";
 import { Item } from "../../data";
 
 interface BasketProps extends React.HTMLAttributes<HTMLDivElement> {
+  /**
+   * Total price of products in the basket.
+   */
+  totalPrice: string;
     /**
    * Тhe products that the user has chosen.
    */
@@ -17,6 +21,7 @@ interface BasketProps extends React.HTMLAttributes<HTMLDivElement> {
  * UI component which visualizes the Products that the user has selected
  */
 export const Basket: FC<BasketProps> = ({
+  totalPrice,
   className,
   items,
   ...props
@@ -24,8 +29,8 @@ export const Basket: FC<BasketProps> = ({
   return (
     <div className={`${className} ${classes.basket}`} {...props}>
       <div className={classes.items}>
-        {items.map(item => (
-            <div className={classes.item}>
+        {items.map((item, index) => (
+            <div className={classes.item} key={index}>
             <span className={classes["item-name"]}>{item.name}</span>
             <span className={classes["item-price"]}>
               <span className={classes.currency}>$&nbsp;</span>
@@ -40,7 +45,7 @@ export const Basket: FC<BasketProps> = ({
           <span className={classes["item-name"]}>Total</span>
           <span className={classes["item-price"]}>
             <span className={classes.currency}>$&nbsp;</span>
-            {(items.reduce((a, c) => a + c.price, 0) ?? 0).toFixed(2)}
+            {totalPrice}
           </span>
         </div>
       </div>

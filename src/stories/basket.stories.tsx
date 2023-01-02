@@ -28,6 +28,7 @@ export const Example = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example.args = {
   items: [data.items[1], data.items[2]],
+  totalPrice: (data.items[1]["price"] + data.items[2]["price"]).toFixed(2)
 };
 Example.parameters = {
   viewport: {
@@ -40,6 +41,7 @@ export const Example1 = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example1.args = {
   items: data.items,
+  totalPrice: (data.items?.reduce((a, c) => a + c.price, 0) ?? 0).toFixed(2)
 };
 Example1.parameters = {
   viewport: {

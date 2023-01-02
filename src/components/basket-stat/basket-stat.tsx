@@ -7,7 +7,7 @@ interface BasketStatProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
   /**
    * Total price of products in the basket.
    */
-  totalPrice: number;
+  totalPrice: string;
   /**
    * Optional. Basket click handler.
    */
@@ -40,7 +40,7 @@ export const BasketStat: FC<BasketStatProps> = ({
         className={classes["basket-image"]}
         alt="shopping-basket"
       />
-      <span className={classes["total-price"]}>{totalPrice.toFixed(2)}$</span>
+      <span className={classes["total-price"]}>{totalPrice}$</span>
       <Button className={classes.button} primary onClick={onOrderNowClick}>
         Order Now
       </Button>

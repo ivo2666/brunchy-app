@@ -1,10 +1,19 @@
 @import "mixins";
 
+
+
+
 .app {
   width: screen;
   padding: 34px 73px 77px 56px;
   .basket-stat {
     margin: 0 auto;
+  }
+
+  .basket-list {
+    max-height: 70vh;
+    overflow: auto;
+    margin-bottom: 45px;
   }
 
   .product-list-wrapper {
@@ -13,17 +22,26 @@
   }
 
   .hero {
-    margin: 87px 0 118px;
+    margin: 87px auto 118px;
+  }
+
+  .basket-modal {
+    position: absolute;
+    bottom: 77px;
   }
 }
 
 @include mobile {
   .app {
     padding: 34px 24px 60px 44px;
-
+    overflow: hidden;
     .product-list-wrapper {
       width: calc(100% + 24px);
       margin-bottom: 53px;
+    }
+
+    .basket-list {
+      margin-bottom: 40px;
     }
 
     .hero {
@@ -44,8 +62,15 @@
       width: calc(100% + 74px);
       margin-bottom: 73px;
     }
+    .basket-list {
+      margin-bottom: 40px;
+    }
     .hero {
         margin: 45px 0 36px;
+    }
+    .basket-modal {
+      position: absolute;
+      bottom: 54px;
     }
   }
 }
