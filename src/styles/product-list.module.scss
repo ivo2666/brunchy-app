@@ -1,0 +1,13 @@
+@import "mixins";
+
+.product-list {
+  min-width: min-content;
+  display: flex;
+  gap: 41.52px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: auto;
+  @include hideScrollbar;
+}
