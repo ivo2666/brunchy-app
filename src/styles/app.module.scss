@@ -1,0 +1,58 @@
+@import "mixins";
+
+.app {
+  width: screen;
+  padding: 34px 73px 77px 56px;
+  .basket-stat {
+    margin: 0 auto;
+  }
+
+  .product-list-wrapper {
+    width: calc(100% + 73px);
+    margin-bottom: 164px;
+  }
+
+  .hero {
+    margin: 87px 0 118px;
+  }
+}
+
+@include mobile {
+  .app {
+    padding: 34px 24px 60px 44px;
+
+    .product-list-wrapper {
+      width: calc(100% + 24px);
+      margin-bottom: 53px;
+    }
+
+    .hero {
+      margin: 10px 0 35px;
+      h1 {
+        width: 100vw;
+        position: relative;
+        left: -44px;
+      }
+    }
+  }
+}
+
+@include large {
+  .app {
+    padding: 36px 74px 54px 140px;
+    .product-list-wrapper {
+      width: calc(100% + 74px);
+      margin-bottom: 73px;
+    }
+    .hero {
+        margin: 45px 0 36px;
+    }
+  }
+}
+
+@include xs {
+  .app {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

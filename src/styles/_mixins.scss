@@ -4,6 +4,12 @@
   }
 }
 
+@mixin xs() {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
 @mixin large() {
   @media (min-width: 900px) {
     @content;
@@ -12,7 +18,8 @@
 
 @mixin hideScrollbar {
   &::-webkit-scrollbar {
-    width: 0 !important
+    width: 0 !important;
+    height: 0!important;
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
