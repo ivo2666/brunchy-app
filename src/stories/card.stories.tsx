@@ -15,16 +15,16 @@ const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 export const Example = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example.args = {
-  ...data.items[0]
+  item:data.items[0]
 };
 
 export const Example2 = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example2.args = {
-  ...data.items[5]
+  item: data.items[5]
 };
 export const Example3 = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Example3.args = {
-  ...data.items[6]
+  item: data.items[6]
 };
