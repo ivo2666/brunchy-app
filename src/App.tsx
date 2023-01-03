@@ -48,7 +48,9 @@ function App() {
   return (
     <div className={classes.app}>
       <Header />
+      <div className={classes["hero-wrapper"]}>
       <Hero className={classes.hero} />
+      </div>
       <div className={classes["product-list-wrapper"]}>
         <ProductList
           onProductSelect={onProductSelectHandler}

@@ -33,12 +33,19 @@
   .app {
     padding: 34px 0 60px;
     .product-list-wrapper {
+      width: calc(100% - 44px);
       margin-left: 44px;
       margin-bottom: 54px;
     }
 
+    .hero-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
     header {
-      max-width: calc(100% - 44px);
+      width: calc(100% - 44px);
       margin-left: 44px;
     }
 
@@ -53,7 +60,7 @@
 
     .hero {
       max-width: 430px;
-      margin: 11px auto 36px;
+      margin: 0 0 36px;
     }
   }
 }
@@ -84,12 +91,12 @@
     padding-right: 0;
     margin: 0 auto;
     header {
-      max-width: 342px;
-      margin-left: auto;
-      margin-right: auto;
+      width: calc(100% - 6vw);
+      margin-left: 6vw;
     }
 
     .product-list-wrapper {
+      width: calc(100% - 6vw);
       margin-left: 6vw;
     }
   }
