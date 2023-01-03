@@ -27,7 +27,7 @@ export const Basket: FC<BasketProps> = ({
   ...props
 }) => {
   return (
-    <div className={`${className} ${classes.basket}`} {...props}>
+    <div className={`${className ?? ""} ${classes.basket}`} {...props}>
       <div className={classes.items}>
         {items.map((item, index) => (
             <div className={classes.item} key={index}>

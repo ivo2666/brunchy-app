@@ -9,7 +9,7 @@ export const Hero: FC<React.HTMLAttributes<HTMLElement>> = ({
   ...props
 }) => {
   return (
-    <section className={`${className} ${classes.hero}`} {...props}>
+    <section className={`${className ?? ""} ${classes.hero}`} {...props}>
       <h1 className={classes.title}>
         The fastest brunch delivery in{" "}
         <span className={classes["title-span"]}>Your city</span>

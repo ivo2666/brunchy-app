@@ -9,7 +9,7 @@ import FreeDelivery from "../free-delivery/free-delivery";
  */
 export const Header: FC<React.HTMLAttributes<HTMLElement>> = ({className, ...props }) => {
   return (
-    <header className={`${className} ${classes.header}`} {...props}>
+    <header className={`${className ?? ""} ${classes.header}`} {...props}>
       <div className={classes["logo-nav-wrapper"]}>
         <Logo />
         <Navigation className={classes.nav} />

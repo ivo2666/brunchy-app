@@ -10,7 +10,7 @@ export const Logo: FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
 }) => {
   return (
     <h2
-      className={`${className} ${classes.logo}`}
+      className={`${className ?? ""} ${classes.logo}`}
       {...props}
     >
         BRUNCHY

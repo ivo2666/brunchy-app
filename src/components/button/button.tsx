@@ -33,7 +33,7 @@ export const Button: FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${className} ${smallOnMobile ? classes.smallOnMobile : ""} ${
+      className={`${className ?? ""} ${smallOnMobile ? classes.smallOnMobile : ""} ${
         primary ? classes.primary : ""
       } ${classes.button}`}
       {...props}

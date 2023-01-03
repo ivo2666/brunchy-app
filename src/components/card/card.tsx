@@ -22,7 +22,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
  */
 export const Card: FC<CardProps> = ({ item, onBasketClick = () => {}, className, ...props }) => {
   return (
-    <div className={`${className} ${classes.card}`} {...props}>
+    <div className={`${className ?? ""} ${classes.card}`} {...props}>
       <div className={classes.body}>
         <h4 className={classes.name}>{item.name}</h4>
         <h5 className={classes.caption}>{item.caption}</h5>

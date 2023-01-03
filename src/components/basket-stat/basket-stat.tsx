@@ -33,7 +33,7 @@ export const BasketStat: FC<BasketStatProps> = ({
   ...props
 }) => {
   return (
-    <div className={`${className} ${classes["basket-stat"]}`} {...props}>
+    <div className={`${className ?? ""} ${classes["basket-stat"]}`} {...props}>
       <img
         src={shoppingBasket}
         onClick={onBasketClick}

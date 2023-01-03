@@ -22,7 +22,7 @@ export const SuccessCont: FC<SuccessContProps> = ({
   ...props
 }) => {
   return (
-    <div className={`${className} ${classes["success-cont"]}`} {...props}>
+    <div className={`${className ?? ""} ${classes["success-cont"]}`} {...props}>
       <div className={classes.content}>
         <h3 className={classes.title}>Congratulations!</h3>
         <p className={classes.info}>Your order it’s on its way.</p>

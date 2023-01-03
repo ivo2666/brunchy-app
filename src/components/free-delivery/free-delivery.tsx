@@ -11,7 +11,7 @@ export const FreeDelivery: FC<React.HTMLAttributes<HTMLDivElement>> = ({
   ...props
 }) => {
   return (
-    <div className={`${className} ${classes.wrapper}`} {...props}>
+    <div className={`${className ?? ""} ${classes.wrapper}`} {...props}>
         <div className={classes["pink-rectangle"]}>
         <div className={classes["free-delivery"]}>Free Delivery</div>
         </div>
