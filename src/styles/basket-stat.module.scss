@@ -14,7 +14,7 @@
   width: 30px;
   margin-left: 28px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1;
 }
 
 .total-price {
@@ -34,7 +34,7 @@
 
 @include mobile {
   .basket-stat {
-    width: 350.51px;
+    width: 342px;
     position: relative;
   }
 

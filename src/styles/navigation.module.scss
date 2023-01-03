@@ -1,4 +1,5 @@
 @use "colors";
+@import "mixins";
 
 .nav-list {
   width: 140px;
@@ -12,4 +13,13 @@
   font-weight: 600;
   font-size: 14px;
   color: colors.$text-secondary;
+}
+
+@include xs {
+  .nav-list {
+    width: auto;
+    max-width: 140px;
+    flex-grow: 1;
+    gap: 5px;
+  }
 }

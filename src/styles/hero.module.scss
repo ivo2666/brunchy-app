@@ -15,6 +15,7 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 62px;
+  max-width: 100%;
 }
 
 .paragraph {
@@ -23,6 +24,7 @@
   font-size: 16px;
   line-height: 22px;
   width: 571px;
+  max-width: 100%;
   margin: 0;
 }
 
@@ -45,6 +47,7 @@
 
   .paragraph {
     width: 100%;
+    max-width: 416px;
   }
 }
 

@@ -11,7 +11,7 @@ export const Header: FC<React.HTMLAttributes<HTMLElement>> = ({className, ...pro
   return (
     <header className={`${className ?? ""} ${classes.header}`} {...props}>
       <div className={classes["logo-nav-wrapper"]}>
-        <Logo />
+        <Logo className={classes.logo} />
         <Navigation className={classes.nav} />
       </div>
       <FreeDelivery />

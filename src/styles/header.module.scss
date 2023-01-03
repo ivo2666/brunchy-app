@@ -1,19 +1,32 @@
+@import "mixins";
+
 .header {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .logo-nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 2;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 2;
+  flex-wrap: wrap;
 }
 
 .nav {
     margin: 0 17px;
+  }
+
+
+@include xs {
+    .logo {
+        flex-grow: 2;
+      }
+      
+      .nav {
+        flex-grow: 1;
+      }
 }
